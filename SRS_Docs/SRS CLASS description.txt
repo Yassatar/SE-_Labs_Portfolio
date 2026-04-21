@@ -1,0 +1,79 @@
+Class Structure
+1. User (Abstract Class)
+Serves as the base for all user types within the system.
+
+Attributes:
+
+# username: String
+
+# password: String
+
+Method:
+
++ login(): boolean
+
+2. Student
+Inherits from the User class and represents the end-user taking the exam.
+
+Attributes:
+
+- studentID: String
+
+Methods:
+
++ startExam()
+
++ submitExam()
+
+3. Exam
+Represents the assessment entity.
+
+Attributes:
+
+- examID: String
+
+- duration: int
+
+Method:
+
++ validateSubmission()
+
+4. Question
+Details the individual items within an exam.
+
+Attributes:
+
+- questionID: String
+
+- content: String
+
+Method:
+
++ checkAnswer()
+
+5. SecurityManager
+Handles critical security constraints, such as AES-256 encryption for local caching.
+
+Methods:
+
++ encryptData()
+
++ monitorActivity()
+
+ Key Relationships
+The diagram utilizes precise UML notations to define interactions:
+
+Inheritance (Generalization): The Student is a specialization of the User (indicated by a hollow arrow pointing toward User).
+
+Composition: An Exam is composed of multiple Questions. If the exam is deleted, the associated questions are also destroyed (indicated by a solid diamond on the Exam side).
+
+Association: The Student takes an Exam (represented by a simple line connecting the two classes).
+
+Dependency: The Student relies on the SecurityManager for data protection (represented by a dashed line with an arrow).
+
+ Visibility Standards
++ Public: Accessible by any other class.
+
+- Private: Accessible only within the class (Encapsulation).
+
+# Protected: Accessible by the class and its subclasses (used for Inheritance between User and Student).
