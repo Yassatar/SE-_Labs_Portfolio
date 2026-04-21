@@ -1,0 +1,19 @@
+2. Medical System – State Diagram
+ Description
+
+This diagram shows the different states of a patient during a clinic visit.
+
+ States
+Idle
+Appointment Scheduled
+Waiting
+In Consultation
+Completed
+ Transitions
+createAppointment → Appointment Scheduled
+patient arrives → Waiting
+doctor available → In Consultation
+finish consultation → Completed
+ Purpose
+
+To represent the lifecycle of a system and how it transitions between states.

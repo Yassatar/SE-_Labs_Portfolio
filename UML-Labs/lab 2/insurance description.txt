@@ -1,0 +1,16 @@
+3. System: Car InsuranceA workflow-oriented system managing policy purchases and accident claims.
+
+Actors
+Customer: The client who buys insurance and reports incidents.
+Insurance Agent: Manages the administrative side of policies.
+Claim Adjuster: Evaluates the validity of insurance claims.
+Use Case DescriptionsLogin: The central security gateway for all users.
+Get Quote: Initiated by the customer to see pricing.
+Relation: Includes Login.
+Buy Policy: The formal purchase of insurance coverage.
+Relation: Includes Login.
+Claim: Reporting an accident to the company.
+Relation: Includes Login.Photos: Uploading evidence for a claim.
+Relation: Extends Claim (optional supporting evidence).
+Manage Policies: Exclusive to the Insurance Agent to oversee client contracts.
+Process Claim: Action taken by the Claim Adjuster to approve or deny a request.

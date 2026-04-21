@@ -1,0 +1,22 @@
+1. System: ATM (Automated Teller Machine)
+This system models secure financial transactions and the relationship between bank accounts and physical hardware.
+
+Classes & Structure
+ATM: The central interface. Contains attributes like location and atmID. It manages methods such as identifyCard() and dispenseCash().
+
+Customer: Represents the user. Attributes: name, customerID. Methods: insertCard(), enterPIN().
+
+Card: Validates access. Attributes: cardNumber. Method: validatePIN().
+
+Account: An abstract representation of funds. Attributes: accountNumber, balance.
+
+Saving Account: Inherits from Account. Adds interestRate and the method applyInterest().
+
+Transaction: Records operations. Attributes: transactionID, date. Method: execute().
+
+Key Relationships
+Inheritance: Saving Account inherits from Account.
+
+Association: Customer uses the ATM and owns a Card.
+
+Composition: An Account is composed of multiple Transactions.
