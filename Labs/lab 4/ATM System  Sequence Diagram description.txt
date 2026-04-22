@@ -1,0 +1,27 @@
+1. ATM System – Sequence Diagram
+ Description
+
+This diagram represents the interaction between different components during an ATM withdrawal process.
+
+ Actors / Objects
+Customer
+ATM
+Card
+Account
+Transaction
+
+ Process
+The customer inserts the card.
+The ATM reads the card.
+The customer enters the PIN.
+The system validates the PIN.
+If the PIN is correct:
+The system checks the account balance.
+If sufficient, a transaction is created and cash is dispensed.
+Otherwise, an error is displayed.
+If the PIN is incorrect:
+The system returns an error message.
+
+ Purpose
+
+To illustrate the sequence of interactions between system components over time

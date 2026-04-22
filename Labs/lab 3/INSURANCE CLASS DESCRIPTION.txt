@@ -1,0 +1,20 @@
+3. System: Car Insurance
+Models the business logic between a client, their vehicle, and the insurance provider's policy management.
+
+Classes & Structure
+InsuranceCompany: The governing entity. Attributes: name. Methods: createPolicy(), processClaim().
+
+Customer: The policyholder. Attributes: customerID, address. Method: applyForPolicy().
+
+Policy: The contract. Attributes: policyNumber, premium. Method: calculateRisk().
+
+Vehicle: The insured object. Attributes: model. Method: getVehicleValue().
+
+Claim: Represents an accident report. Attributes: claimID, status. Method: approveClaim().
+
+Key Relationships
+Association: Customer owns a Vehicle.
+
+Dependency: InsuranceCompany depends on Policy data to processClaim().
+
+Association Class: A Policy can be seen as the link between a Customer and the InsuranceCompany.

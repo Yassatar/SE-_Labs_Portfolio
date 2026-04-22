@@ -1,0 +1,20 @@
+ 2. System: Hospital ManagementFocuses on the coordination between patients and medical staff for healthcare services.
+
+Actors
+Patient: The user seeking medical appointments and records.
+
+Doctor: The medical professional managing prescriptions and consultations.
+
+Use Case DescriptionsAuthentification: Secure login for both patients and medical staff.
+
+Book Appointment: The process of scheduling a visit with a doctor.
+
+Relation: Includes Authentification.
+
+Cancel Appointment: Allows a user to remove a scheduled visit.
+
+View Medical Record: Secure access to patient history, used by both actors.
+
+Relation: Extends Book Appointment (often reviewed during the booking context).
+
+Prescribe Medication: Action exclusive to the Doctor to provide treatments.

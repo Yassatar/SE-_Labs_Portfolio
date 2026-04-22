@@ -1,0 +1,21 @@
+Insurance System – Activity Diagram
+ Description
+
+This diagram illustrates the workflow of an insurance process, from application to claim handling.
+
+ Process
+Apply for policy
+Calculate risk
+If risk is acceptable:
+Create policy
+Otherwise:
+Reject application
+Submit claim
+Validate claim
+If valid:
+Approve claim
+Otherwise:
+Reject claim
+ Purpose
+
+To represent the flow of activities and decision points in a process.

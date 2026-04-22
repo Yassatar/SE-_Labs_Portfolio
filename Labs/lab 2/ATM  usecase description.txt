@@ -1,0 +1,22 @@
+1. System: ATM (Automated Teller Machine)This system models the interaction between a bank customer and the hardware interface for financial operations.
+
+Actors
+Customer: The primary actor who initiates transactions.
+
+Bank: The secondary actor (system) that processes and authorizes requests.
+
+Use Case DescriptionsAuthentification: The mandatory entry point to verify the customer's identity.
+
+Withdraw: The core process of taking cash from the account.
+
+Relation: Includes Authentification (must login to withdraw).
+
+Invalid PIN: A specialized scenario triggered during failed login attempts.
+
+Relation: Includes Authentification.
+
+Sold (Balance): Allows the user to view their remaining balance.
+
+Reciep (Receipt): An optional printout provided after a withdrawal.
+
+Relation: Extends Withdraw (only occurs if the user chooses it).
