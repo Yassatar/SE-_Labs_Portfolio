@@ -1,0 +1,71 @@
+1. Sequence Diagram
+ Description
+
+This sequence diagram illustrates the interaction between system components during an exam session.
+
+ Behavior
+The student initiates the session by logging in.
+The system validates credentials through the server.
+An alternative flow (ALT) is used:
+If authentication is successful → access is granted.
+If authentication fails → an error is returned.
+The student interacts with the system (answering questions).
+The system processes the submission and calculates the result.
+ Purpose
+
+To show the chronological order of interactions between system components and highlight conditional flows.
+
+ 2. State Diagram
+ Description
+
+This state diagram represents the lifecycle of a student during an exam.
+
+
+ States
+Idle → initial state
+Authenticated
+Exam Started
+Answering Questions
+Submitted
+Completed → final state
+
+ Transitions
+login → Authenticated
+startExam → Exam Started
+answering → Answering Questions
+submitExam → Submitted
+calculateResult → Completed
+🎯 Purpose
+
+To describe how the system changes state in response to user actions.
+
+
+ 3. Activity Diagram
+
+ Description
+
+This activity diagram models the workflow of the exam process.
+
+
+ Flow
+Student logs in
+System validates credentials
+
+Decision point:
+
+If valid → continue
+If invalid → terminate process
+Start exam
+Answer questions
+Auto-save responses (periodic process)
+Submit exam
+
+Decision point:
+
+If submission is valid → calculate result
+Otherwise → reject submission
+Display final result
+
+ Purpose
+
+To illustrate the flow of activities and decision-making within the system.

@@ -1,0 +1,22 @@
+Actor IdentificationStudent: The primary actor who interacts with the system to take exams.Association: A solid line connects the Student to the Take Exam use case, indicating a direct interaction and the initiation of the process.
+
+ Use Case DescriptionsThe system is encapsulated within a defined System Boundary.
+ The main process is initiated through the Take Exam use case, which serves as the base for all other required actions.
+
+Base Use CaseTake
+ Exam: The main entry point for the testing session.Inclusion Relations (<<include>>)The following use cases are mandatory components of the "Take Exam" process. 
+They are linked via dashed arrows pointing toward the included behavior:Authenticate: Ensures the student is authorized to access the exam.
+
+Display Questions: The system retrieves and presents the exam content to the user.
+
+Select Answers: Allows the student to input or choose their responses.
+
+Submit Exam: Finalizes the attempt and transmits data to the server.
+
+Display Remaining Time: Provides a real-time countdown to assist with student time management.
+
+ Engineering Principles (IEEE 830)Mandatory Execution: Since all sub-tasks are linked by an Inclusion Relation, the "Take Exam" use case cannot be successfully completed without performing every included step.
+
+Traceability: Each use case corresponds to a specific functional requirement (FR) within the Software Requirements Specification (SRS) for the project.
+
+Shall Statement: In the SRS document, these actions are defined using the "shall" keyword to indicate an engineering obligation

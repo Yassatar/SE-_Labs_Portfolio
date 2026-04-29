@@ -1,0 +1,20 @@
+2. System: Medical Clinic (Hospital)
+Focuses on the management of clinical staff, patient care, and medical record persistence.
+
+Classes & Structure
+Staff (Abstract): Base class for employees. Attributes: staffID, name. Method: login().
+
+Doctor: Inherits from Staff. Attributes: specialization. Method: prescribeMedication().
+
+Patient: The service recipient. Attributes: patientID, contactInfo. Method: viewMedicalRecord().
+
+Appointment: Manages scheduling. Attributes: date, time. Method: cancelAppointment().
+
+MedicalRecord: Stores history. Attributes: recordID, history (List). Method: updateHistory().
+
+Key Relationships
+Inheritance: Doctor is a specialization of Staff.
+
+Aggregation: A Doctor is associated with multiple Appointments.
+
+Composition: A Patient has a strictly bound MedicalRecord.
